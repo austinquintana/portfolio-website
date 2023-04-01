@@ -137,7 +137,6 @@ th, td {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 12px;
 }
 
 .navigation-list li {
