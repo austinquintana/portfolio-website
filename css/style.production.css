@@ -170,7 +170,7 @@ Dim Gray: #706563;
   
   .social-media {
     display: grid;
-    grid-template-columns: 80px 80px 0;
+    grid-template-columns: 50px 50px 50px; 
     justify-content: center;
     margin: 0px;
     padding: 0px;
