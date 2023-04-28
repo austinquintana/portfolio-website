@@ -9,7 +9,7 @@
         <link rel="stylesheet" type="text/css" href="css/style.production.css">
     </head>
     <body>
-        <header class="page-header"> 
+        <header class="page-header"> <!--A navigation panel for the top of the webpage to navigate to about, contact me, and home sections-->
             <a href="index.html"><img src="img/logoaq.png" alt="logo" id="logo" class="logo"></a>
             <nav class="main-navigation page-header_item">
                  <ul role="menubar" class="navigation-list">
@@ -29,30 +29,48 @@
             </nav>
         </header>
     <div>
-        <h1 style="text-align: center;">Contact</h1>
-            <ul>
-                <li><a href="tel:+1(385)335-4195">(385)335-4195</a></li>
-                 <li><a href="mailto:austinquintana07@gmail.com">austinquintana07[at]gmail[dot]com</a></li>
+        <h1 style="text-align: center;">Contact Austin</h1>
+            <ul style="text-align: center;">
+                Tel: <a href="tel:+1(385)335-4195">(385)335-4195</a>
+                <br>
+                E-Mail: <a style="text-align: center;" href="mailto:austinquintana07@gmail.com">austinquintana07@gmail.com</a>
             </ul>
         
     </div>
+    <div class="profile--centered">
         <form action="" method="post" id="contact form">
+
+            <span>
             <label class="standard-label" for="contact email">E-mail:</label>
             <input type="email" id="contact email" required>
+            </span>
+            <br>
+            <br>
 
+            <span>
             <label class="standard-label" for="contact telephone">Telephone: </label>
             <input type="tel" id="contact telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+            </span>
+            <br>
+            <br> 
 
-            <label class="standard-label">Message: </label>
+            <div class= "contact-msg"> 
+            <label class="standard-label">Message (max. 240 characters):</label><br>
             <textarea maxlength="240" required></textarea>
-            <input type="submit" value="send message">
+            </div>
+
+            <div class="profile--centered">
+            <input type="submit" value="Send Message">
+            </div>
+
         </form>
+    </div>
         <footer class="page-footer">
             <p>Find me on</p>
             <div class="social-media">
-                <a href="https://github.com/austinquintana" target="_blank"><img src="img/github.png" alt="github"></a>
-                <a href="https://www.instagram.com/austinquintana/" target="_blank"><img src="img/instagram-small.png" alt="instagram"></a>
-                <a href="https://www.linkedin.com/in/austin-quintana-b17132140/" target="_blank"><img src="img/linkedin.png" alt="linkedIn"></a>
+                <a class="social-media--icon" href="https://github.com/austinquintana" target="_blank"><img src="img/github.png" alt="github"></a>
+                <a class="social-media--icon" href="https://www.instagram.com/austinquintana/" target="_blank"><img src="img/instagram-small.png" alt="instagram"></a>
+                <a class="social-media--icon" href="https://www.linkedin.com/in/austin-quintana-b17132140/" target="_blank"><img src="img/linkedin.png" alt="linkedIn"></a>
             </div>
         </footer>
         <script src="js/tota11y.min.js"></script>

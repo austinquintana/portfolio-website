@@ -22,7 +22,7 @@ Dim Gray: #706563;
   background-image: url(../img/underwater2.0.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  min-height: 120vh;
 }
 
 .logo {
@@ -96,6 +96,10 @@ button:hover, button:focus, .button:hover, .button:focus {
     opacity: 0.8;
 }
 
+.contact-msg {
+  max-width: 98vw;
+}
+
 table {
   width: 50%;
   border: solid;
@@ -114,12 +118,14 @@ th, td {
     color: black;
 }
 
-.page-header { 
-    display: flex;
-    width: 100%;
-    padding: 20px 40px;
-    /*filter: drop-shadow(0px 2px 1px #300C0F)*/
+/*the page header, ph__item, and ph__i:last:child below all use a flexbox to properly align the heading of the website*/
+.page-header {
+  display: flex;
+  width: 100%;
+  padding: 20px 40px;
+  /*filter: drop-shadow(0px 2px 1px #300C0F)*/
 }
+
 
 .page-header__item {
     flex: 0 1 200px;
@@ -163,6 +169,14 @@ th, td {
     padding-top: 50px;
 }
 
+.profile--centered {
+  max-width: 700px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  text-align: center;
+}
+
 .page-footer {
     clear: both;
     flex-direction: column;
@@ -189,6 +203,10 @@ th, td {
     display: flex;
     flex-direction: column;
     text-align: center;
+}
+
+.standard-label {
+  margin: 40px 5px 10px;
 }
 
 .grid {
