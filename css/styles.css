@@ -216,26 +216,28 @@ th, td {
 }
 
 .grid {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 400px 310px 350px;
-    grid-template-rows: 300px 300px;
-    grid-gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
 }
 
 .grid__item {
-    background-color: var(--secondary-color);
-    padding-top: 4%;
-    padding-left: 9%;
-    padding-right: 4%;
-    border-radius: 25px;
+  background-color: var(--grid-item-color);
+  padding: 14px;
+  border-radius: 18px;
+  box-shadow: 1px 1px 7px rgba(0,0,0,0.1);
 }
 
-.grid__item:last-child {
-    grid-column-start: 3;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
+@media all and (max-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media all and (max-width: 568px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .bubbles img{
