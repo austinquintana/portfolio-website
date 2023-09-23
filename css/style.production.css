@@ -238,6 +238,7 @@ td {
   text-align: center;
 }
 
+
 /* Page Footer */
 .page-footer {
   clear: both;
@@ -597,6 +598,16 @@ td {
 
   h1 {
     font-size: 22px;
+  }
+}
+
+/* Add media query for mobile responsiveness */
+@media (max-width: 768px) {
+  /* Adjust the background image for smaller screens */
+  .content-container {
+    background-size: cover; /* Cover the entire screen */
+    background-position: center center; /* Center the background image */
+    min-height: 100vh; /* Set a minimum height for the content container */
   }
 }
 
