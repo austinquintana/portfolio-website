@@ -257,7 +257,9 @@ td {
 }
 
 .about-title h1 {
-  margin-right: 20px;
+  text-align: center; /* Center the text */
+  max-width: 100%; /* Adjust to 100% to fit the screen width */
+  margin: 20px auto; /* Center the title vertically and horizontally */
 }
 
 .main-about {
@@ -275,8 +277,8 @@ td {
 
 .bio {
   color: #000000;
-  max-width: 500px;
-  height: 600px;
+  max-width: 100%;
+  height: auto;
   background-color: #ffffff;
   border: 2px solid #000000;
   border-radius: 10px;
@@ -296,9 +298,8 @@ td {
 }
 
 .bio p {
-  font-size: 20px;
-  margin-top: 0px;
-  margin-bottom: 40px;
+  font-size: 16px;
+  margin-bottom: 20px;
 }
 
 .bio h1 {
@@ -306,15 +307,10 @@ td {
 }
 
 .skill-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  -ms-flex-wrap: wrap;
+  display: flex;
   flex-wrap: wrap;
-  height: 325px;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
-  width: 480px;
+  width: 100%;
 }
 
 /* Add a hover effect */
@@ -356,15 +352,14 @@ td {
 
 .skill-box {
   width: 100px;
-  background-color: #f4f5f6;
-  padding: 5px; /* Increase the padding */
-  height: 140px; /* Adjust the height as needed */
-  border-radius: 5px;
-  margin-right: 20px;
-  border: 2px solid #f4f5f6;
-  -webkit-transition: border-color 200ms ease-in-out;
-  -o-transition: border-color 200ms ease-in-out;
-  transition: border-color 200ms ease-in-out;
+  height: 120px; /* Adjust the height for mobile */
+  margin-right: 10px; /* Reduce margin for better spacing on mobile */
+}
+
+/* Adjust the size of skill box icons for mobile */
+.skill-box img {
+  width: 30px; /* Adjust the width for smaller icons on mobile */
+  height: 30px; /* Adjust the height for smaller icons on mobile */
 }
 
 
@@ -414,16 +409,15 @@ td {
 }
 
 .skill-flex .skill-box:last-child {
-  margin-bottom: 20px; /* Add the desired margin to the bottom */
+  margin-right: 0;
+  margin-bottom: 10px;
 }
 
 
 .about-page-footer {
-  margin-top: -50px;
+  margin-top: 20px; /* Increase top margin for better spacing on mobile */
   padding-bottom: 30px;
   clear: both;
-  display: flex;
-  flex-direction: column;
   text-align: center;
 }
 
