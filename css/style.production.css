@@ -154,6 +154,11 @@ h3 {
   border: 2px solid #4c9bb6;
 }
 
+.bio .button {
+  background-color: black; 
+  color: white; 
+}
+
 /* Contact Form */
 form {
   display: flex;
@@ -241,12 +246,177 @@ td {
 }
 
 /* About Me */
-.about-me {
-  min-width: 360px;
-  max-width: 800px;
-  margin: 0 auto;
-  padding-top: 50px;
+.about-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 200px;
+  -webkit-box-pack: left;
+  -ms-flex-pack: left;
+  justify-content: left;
 }
+
+.about-title h1 {
+  margin-right: 20px;
+}
+
+.main-about {
+  text-align: center;
+  max-width: 90%;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+}
+
+.bio {
+  color: #000000;
+  max-width: 500px;
+  height: 600px;
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  line-height: 2;
+  padding: 30px;
+  text-align: left;
+}
+
+.bio:hover {
+  -webkit-box-shadow: 1px 14px 20px 4px rgba(113, 111, 114, 0.1);
+  box-shadow: 1px 14px 20px 4px rgba(113, 111, 114, 0.1);
+}
+
+.bio:focus {
+  -webkit-box-shadow: 1px 14px 20px 4px rgba(113, 111, 114, 0.1);
+  box-shadow: 1px 14px 20px 4px rgba(113, 111, 114, 0.1);
+}
+
+.bio p {
+  font-size: 20px;
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+
+.bio h1 {
+  margin: 0px;
+}
+
+.skill-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  height: 325px;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  width: 480px;
+}
+
+/* Add a hover effect */
+.skill-flex .skill-box:hover {
+  border: 2px solid #4c9bb6 !important;
+}
+
+/* Add a hover effect for the text */
+.skill-flex .skill-box:hover p {
+  color: #4c9bb6 !important;
+}
+
+/* Remove the margin from the last skill box */
+.skill-flex .skill-box:last-child {
+  margin-right: 0; /* Remove the margin */
+}
+
+/* Modify the size of the skill box icons */
+.skill-flex .skill-box img {
+  width: 40px; /* Adjust the width to make them smaller */
+  height: 40px; /* Adjust the height to make them smaller */
+}
+
+/* Center the text inside the skill boxes */
+.skill-flex .skill-box p {
+  text-align: center;
+  margin-top: 5px;
+}
+
+/* Add a hover effect */
+.skill-flex .skill-box:hover {
+  border: 2px solid #4c9bb6 !important;
+}
+
+/* Add a hover effect for the text */
+.skill-flex .skill-box:hover p {
+  color: #4c9bb6 !important;
+}
+
+.skill-box {
+  width: 100px;
+  background-color: #f4f5f6;
+  padding: 5px; /* Increase the padding */
+  height: 140px; /* Adjust the height as needed */
+  border-radius: 5px;
+  margin-right: 20px;
+  border: 2px solid #f4f5f6;
+  -webkit-transition: border-color 200ms ease-in-out;
+  -o-transition: border-color 200ms ease-in-out;
+  transition: border-color 200ms ease-in-out;
+}
+
+
+/* Center the text inside the skill boxes */
+.skill-box p {
+  text-align: center;
+  margin-top: 5px;
+  color: #000000
+}
+
+/* Add a hover effect */
+.skill-box:hover {
+  border: 2px solid #4c9bb6 !important;
+}
+
+/* Add a hover effect for the text */
+.skill-box:hover p {
+  color: #4c9bb6 !important;
+}
+
+.skill-box:focus {
+  border: 2px solid #4c9bb6;
+}
+
+.skills__item {
+  background-color: #4c9bb6;
+  padding: 5px;
+  border-radius: 10%;
+}
+
+.skills-item__css {
+  padding: 5px 10px 5px 10px;
+  background-color: #4c9bb6;
+  border-radius: 10%;
+}
+
+.skills-item__html {
+  padding: 5px 10px 5px 10px;
+  background-color: #4c9bb6;
+  border-radius: 10%;
+}
+
+.skills-item__book {
+  padding: 5px 10px 5px 10px;
+  background-color: #4c9bb6;
+  border-radius: 10%;
+}
+
+.skill-flex .skill-box:last-child {
+  margin-bottom: 20px; /* Add the desired margin to the bottom */
+}
+
 
 .about-page-footer {
   margin-top: -50px;
@@ -271,7 +441,7 @@ td {
 
 .contact-info__item {
   padding: 15px;
-  color: #000000;
+  color: #ffffff;
   font-weight: 700;
   transition: all 200ms ease-in-out;
 }
