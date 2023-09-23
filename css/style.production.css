@@ -621,7 +621,7 @@ td {
   }
 
   .nav-right {
-    flex-direction: column; /* Stack menu items vertically on mobile */
+    flex-direction: column-reverse; /* Stack menu items vertically on mobile */
     text-align: center; /* Center-align menu items on mobile */
   }
 
