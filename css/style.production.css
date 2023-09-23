@@ -155,6 +155,11 @@ h3 {
 }
 
 .bio .button {
+  display: block;
+  margin: 10px auto;
+  max-width: 100%;
+  width: 80%;
+  padding: 10px;
   background-color: black; 
   color: white; 
 }
@@ -278,6 +283,7 @@ td {
 .bio {
   color: #000000;
   max-width: 100%;
+  padding: 20px;
   height: auto;
   background-color: #ffffff;
   border: 2px solid #000000;
