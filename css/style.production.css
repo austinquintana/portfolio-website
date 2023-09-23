@@ -515,6 +515,14 @@ td {
   bottom: -120px;
 }
 
+/* Add a media query for mobile screens */
+@media (max-width: 768px) {
+  .bubbles img {
+    bottom: -50px; /* Adjust the starting position for mobile */
+    transform: translateY(100%); /* Start off-screen at the bottom */
+  }
+}
+
 @keyframes bubble {
   0% {
     transform: translateY(0);
