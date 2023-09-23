@@ -36,10 +36,12 @@ body {
   width: 100%;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 .page-header__item {
   align-self: center;
+  margin-bottom: 0 15px; /* Add spacing between header items on mobile */
 }
 
 .menuitem:active {
@@ -59,7 +61,7 @@ body {
 
 .nav-right {
   display: flex;
-  padding-right: 30px;
+  align-items: center; /* Center-align menu items horizontally */
 }
 
 .active {
@@ -67,17 +69,17 @@ body {
 }
 
 header p {
-  padding: 40px 15px 37px 15px;
+  padding: 20px;
   margin: 0;
   display: block;
-  height: 70%;
+  height: auto;
   transition: all 200ms ease-in-out;
 }
 
 header p:hover,
 header p:focus {
   background-color: #f4f5f6;
-  padding-bottom: 37px;
+  padding: 20px;
   border-bottom: 3px solid #4c9bb6;
   cursor: pointer;
 }
@@ -608,6 +610,23 @@ td {
     background-size: cover; /* Cover the entire screen */
     background-position: center center; /* Center the background image */
     min-height: 100vh; /* Set a minimum height for the content container */
+  }
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+  .page-header {
+    flex-direction: column; /* Stack items vertically on mobile */
+    text-align: center; /* Center-align text on mobile */
+  }
+
+  .nav-right {
+    flex-direction: column; /* Stack menu items vertically on mobile */
+    text-align: center; /* Center-align menu items on mobile */
+  }
+
+  .page-header__item {
+    margin: 10px 0; /* Add spacing between header items on mobile */
   }
 }
 
