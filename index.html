@@ -1,67 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Austin Quintana</title>
-        <link rel="shortcut icon" href="img/octopus.png">
-        <link rel="stylesheet" type="text/css" href="css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="css/style.production.css"> 
-</head>
-<body class="homepage-body">
-         <header class="page-header">
-                <img src="img/logoaq.png" alt="logo" id="logo" class="logo">
-                <nav class="main-navigation page-header_item">
-                    <ul role="menubar" class="navigation-list">
-                        <li role="presentation">
-                            <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
-                        </li>
-                        <li role="presentation">
-                            <a href="about.html" role="menuitem" class="navigation-list__item navigation-list__item--active">About</a>
-                        </li>
-                        <li role="presentation">
-                            <a href="contact.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Contact</a>
-                        </li>
-                        <li role="presentation">
-                            <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Work</a>
-                        </li>
-                    </ul>
-                </nav>
-         </header>     
-            <br>
-            <br>  
-            <div class="profile">
-                <img src="img/Austinquintana.png" class="profile_portrait" alt="Austin Quintana portrait"> 
-                <div>
-                    <br>
-                    <br>
-                    <h1>Hello World!</h1>
-                    <p>My name is Austin Quintana. I am a <span>web</span> developer from Utah.</p>
-                    <a style="text-align: center;" href="work.html" class="button">Check out some of my code</a>
-                </div>
-            </div>
-            <br>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Austin Quintana</title>
+    <link rel="shortcut icon" href="img/octopus.png" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+  </head>
+  <body class="homepage-body">
+    <header class="page-header" id="nav">
+        <a href="index.html" class="page-header__item header-logo">
+          <img
+            src="img/logoaq.png"
+            alt="name signature logo"
+            width="150"
+          />
+        </a>
 
-            <div class="bubbles">
-                <img src="img/bubble.png">
-                <img src="img/bubble.png">
-                <img src="img/bubble.png">
-                <img src="img/bubble.png">
-                <img src="img/bubble.png">
-                <img src="img/bubble.png">
-                <img src="img/bubble.png">
-            </div>
+      <div class="nav-right">
+        <a href="index.html" role="menuitem" class="menuitem active">
+          <p class="nav-item" role="presentation">Home</p></a
+        >
+        <a href="about.html" role="menuitem" class="menuitem"
+          ><p class="nav-item" role="presentation">About Austin</p></a
+        >
+        <a href="work.html" role="menuitem" class="menuitem">
+          <p class="nav-item" role="presentation">Work</p></a
+        >
+        <a href="contact.html" role="menuitem" class="menuitem">
+          <p class="nav-item" role="presentation">Contact</p></a
+        >
+      </div>
+    </header>
+    <br />
+    <br />
+    <div class="profile">
+      <img
+        src="img/Austinquintana.png"
+        class="profile_portrait"
+        alt="Austin Quintana portrait"
+      />
+      <div>
+        <br />
+        <br />
+        <h1>Hello World!</h1>
+        <p>
+          My name is Austin Quintana. I am a <span>web</span> developer from
+          Utah.
+        </p>
+        <a style="text-align: center; text-decoration: none;" href="work.html" class="button"
+          >Check out some of my code</a
+        >
+      </div>
+    </div>
+    <br />
 
-        <footer class="page-footer">
-            <p>Find me on</p>
-            <div class="social-media">
-                <a class="social-media--icon" href="https://github.com/austinquintana" target="_blank"><img src="img/github.png" alt="github"></a>
-                <a class="social-media--icon" href="https://www.instagram.com/austinquintana/" target="_blank"><img src="img/instagram-small.png" alt="instagram"></a>
-                <a class="social-media--icon" href="https://www.linkedin.com/in/austin-quintana-b17132140/" target="_blank"><img src="img/linkedin.png" alt="linkedIn"></a>
-            </div>
-        </footer>
+    <div class="bubbles">
+      <img src="img/bubble.png" />
+      <img src="img/bubble.png" />
+      <img src="img/bubble.png" />
+      <img src="img/bubble.png" />
+      <img src="img/bubble.png" />
+      <img src="img/bubble.png" />
+      <img src="img/bubble.png" />
+    </div>
 
-<script src="js/tota11y.min.js"></script>
-</body>
+    <footer class="page-footer">
+      <p>Find me on</p>
+      <div class="social-media">
+        <a
+          class="social-media--icon"
+          href="https://github.com/austinquintana"
+          target="_blank"
+          ><img src="img/github.png" alt="github"
+        /></a>
+        <a
+          class="social-media--icon"
+          href="https://www.instagram.com/austinquintana/"
+          target="_blank"
+          ><img src="img/instagram-small.png" alt="instagram"
+        /></a>
+        <a
+          class="social-media--icon"
+          href="https://www.linkedin.com/in/austin-quintana-b17132140/"
+          target="_blank"
+          ><img src="img/linkedin.png" alt="linkedIn"
+        /></a>
+      </div>
+    </footer>
 
+    <script src="js/tota11y.min.js"></script>
+    <!-- <script src="js/index.js"></script> -->
+  </body>
 </html>

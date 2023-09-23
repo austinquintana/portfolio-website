@@ -1,84 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Austin Quintana</title>
-        <link rel="shortcut icon" href="img/octopus.png">
-        <link rel="stylesheet" type="text/css" href="css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="css/style.production.css">
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Austin Quintana</title>
+    <link rel="shortcut icon" href="img/octopus.png" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+  </head>
 
-<body>
-    <header class="page-header">
-            <!--Add your logo here-->
-            <a href="index.html"><img src="img/logoaq.png" alt="logo" id="logo" class="logo"></a>
-            <nav class="main-navigation page-header_item">
-                <ul role="menubar" class="navigation-list">
-                    <li role="presentation">
-                        <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="about.html" role="menuitem" class="navigation-list__item navigation-list__item--active">About</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="contact.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Contact</a>
-                    <li role="presentation">
-                        <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Work</a>
-                    </li>
-                    </li>
-                </ul>
-            </nav>
+  <body>
+    <header class="page-header" id="nav">
+      <a href="index.html" class="page-header__item header-logo">
+        <img src="img/logoaq.png" alt="name signature logo" width="100" />
+      </a>
+
+      <div class="nav-right">
+        <a href="index.html" role="menuitem" class="menuitem">
+          <p class="nav-item" role="presentation">Home</p></a
+        >
+        <a href="about.html" role="menuitem" class="menuitem"
+          ><p class="nav-item" role="presentation">About Austin</p></a
+        >
+        <a href="work.html" role="menuitem" class="menuitem active">
+          <p class="nav-item" role="presentation">Work</p></a
+        >
+        <a href="contact.html" role="menuitem" class="menuitem">
+          <p class="nav-item" role="presentation">Contact</p></a
+        >
+      </div>
     </header>
-    
+
     <!-- Main content -->
     <section>
-       <h1 style="text-align: center;">Work</h1>
-       <div class="grid">
-          <!-- Grid items will live here -->
-          <div class="grid__item">
-            <h2>PokeDex App</h2>
-            <p>
-               Within this project, I was responsible for the front and backend. It’s written in HTML, CSS and Javascript. 
-            </p>
-            <a href="https://github.com/austinquintana/simple-js-app-main">See project on GitHub</a>
-         </div>
+      <h1 style="text-align: center">My Portfolio</h1>
+      <div class="grid">
+        <!-- Grid items will live here -->
         <div class="grid__item">
-            <h2>myFlix Angular</h2>
-            <p>In this project I created a basic web-based To-Do-List application to practice JQuery.</p>
-            <a href="https://github.com/austinquintana/myFlix-Angular-Client">See project on GitHub</a>
+          <h2>PokeDex App</h2>
+          <p>
+            Within this project, I was responsible for the front and backend.
+            It’s written in HTML, CSS and Javascript.
+          </p>
+          <a href="https://github.com/austinquintana/simple-js-app-main"
+            >See project on GitHub</a
+          >
+          <br>
         </div>
         <div class="grid__item">
-            <h2>myFlix API </h2>
-            <p>In this project I created a calculator to practice writing a layout, using logic that reads numbers or symbols, and using logic that process information to get a result. </p>
-            <a href="https://github.com/austinquintana/my-flix-app">See project on GitHub</a>
+          <h2>myFlix Angular</h2>
+          <p>
+            In this project I created a basic web-based To-Do-List application
+            to practice JQuery.
+          </p>
+          <a href="https://github.com/austinquintana/myFlix-Angular-Client"
+            >See project on GitHub</a
+          >
         </div>
         <div class="grid__item">
-            <h2>myFlix Client</h2>
-            <p>In this project I built a client-side for an app called myFlix based on its existing server-side code(REST API and database).</p>
-            <a href="https://github.com/austinquintana/myFlix-client">See project on GitHub</a>
+          <h2>myFlix API</h2>
+          <p>
+            I built the server-side component of a “movies” web application. The web application will provide users with access to information about different movies, directors, and genres. Users will be able to sign up, update their personal information, and create a list of their favorite movies.
+          </p>
+          <a href="https://github.com/austinquintana/my-flix-app"
+            >See project on GitHub</a
+          >
         </div>
         <div class="grid__item">
-            <h2>React Native Chat App</h2>
-            <p>I created a simple Rock, Paper and Scissors game using Javascript, HTML and CSS</p>
-            <a href="https://github.com/austinquintana/chat-app">See project on GitHub</a>
+          <h2>myFlix Client</h2>
+          <p>
+            In this project I built a client-side for an app called myFlix based
+            on its existing server-side code(REST API and database).
+          </p>
+          <a href="https://github.com/austinquintana/myFlix-client"
+            >See project on GitHub</a
+          >
         </div>
         <div class="grid__item">
-            <h2>Meet App</h2>
-            <p>In this project I made a progressive web application using React and a serverless backend - AWS which fetches data via Google Calendar API from the CareerFoundry events calendar.</p>
-            <a href="https://github.com/austinquintana/meetapp">See project on GitHub</a>
+          <h2>React Native Chat App</h2>
+          <p>
+            I created a chat app built with React Native and GiftedChat, connected to a Firebase backend
+          </p>
+          <a href="https://github.com/austinquintana/chat-app"
+            >See project on GitHub</a
+          >
         </div>
-       </div>
+        <div class="grid__item">
+          <h2>Meet App</h2>
+          <p>
+            In this project I made a progressive web application using React and
+            a serverless backend - AWS which fetches data via Google Calendar
+            API from the CareerFoundry events calendar.
+          </p>
+          <a href="https://github.com/austinquintana/meetapp"
+            >See project on GitHub</a
+          >
+        </div>
+      </div>
     </section>
     <!-- Footer with links to social media profiles -->
     <footer class="page-footer">
-        <p>Find me on</p>
-        <div class="social-media">
-            <a  class="social-media--icon" href="https://github.com/austinquintana" target="_blank"><img src="img/github.png" alt="github"></a>
-            <a  class="social-media--icon" href="https://www.instagram.com/austinquintana/" target="_blank"><img src="img/instagram-small.png" alt="instagram"></a>
-            <a  class="social-media--icon" href="https://www.linkedin.com/in/austin-quintana-b17132140/" target="_blank"><img src="img/linkedin.png" alt="linkedIn"></a>
-        </div>
+      <p>Find me on</p>
+      <div class="social-media">
+        <a
+          class="social-media--icon"
+          href="https://github.com/austinquintana"
+          target="_blank"
+          ><img src="img/github.png" alt="github"
+        /></a>
+        <a
+          class="social-media--icon"
+          href="https://www.instagram.com/austinquintana/"
+          target="_blank"
+          ><img src="img/instagram-small.png" alt="instagram"
+        /></a>
+        <a
+          class="social-media--icon"
+          href="https://www.linkedin.com/in/austin-quintana-b17132140/"
+          target="_blank"
+          ><img src="img/linkedin.png" alt="linkedIn"
+        /></a>
+      </div>
     </footer>
-    
-</body>
+    <!-- <script src="js/index.js"></script> -->
+    <script src="js/tota11y.min.js"></script>
+  </body>
 </html>

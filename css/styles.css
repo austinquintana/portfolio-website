@@ -18,6 +18,10 @@ Dim Gray: #706563;
   --light: #C8DFFF;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .homepage-body {
   background-image: url(../img/Underwater-background.jpg);
   background-size: cover;
@@ -39,10 +43,6 @@ body {
     /* Sets the font size to 16px */
     line-height: 1.6;
     /* Sets the line-height to 1.6 */
-}
-
-* {
-  box-sizing: border-box;
 }
 
 h1 {
@@ -122,36 +122,39 @@ th, td {
 .page-header {
   display: flex;
   width: 100%;
-  padding: 20px 40px;
-  /*filter: drop-shadow(0px 2px 1px #300C0F)*/
-}
-
-
-.page-header__item {
-    flex: 0 1 200px;
-}
-
-.page-header__item:last-child {
-    flex-grow: 1;
-    text-align: right;
-}
-
-.navigation-list {
-  width: 85%;
-  height: 15%;
-  margin: auto;
-  display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: space-between;
 }
 
-.navigation-list li {
-    display: inline-block;
-    margin-left: 15px;
+.header-logo {
+  margin-left: 20px;
 }
 
-.navigation-list__item--active {
-    text-decoration: none;
+.page-header__item {
+  align-self: center;
+}
+
+.menuitem:active {
+  color: var(--primary-color);
+}
+.menuitem {
+  color: var(--secondary-color);
+  text-decoration: none;
+  display: block;
+}
+
+.active:hover,
+.active:focus {
+  cursor: default;
+}
+
+.nav-right {
+  display: flex;
+  padding-right: 20px;
+}
+.active {
+  border-bottom: 2px solid var(--primary-color);
+  color: var(--font-color);
 }
 
 .profile_portrait {
