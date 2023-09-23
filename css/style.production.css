@@ -271,20 +271,21 @@ td {
   text-align: center;
   max-width: 90%;
   margin: 0 auto;
-  margin-top: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  margin-top: 20px;
   display: flex;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+  flex-wrap: wrap; /* Allow flex items to wrap to the next row on smaller screens */
+  justify-content: space-between; /* Create space between the columns */
+  align-items: flex-start; /* Align items at the top of each column */
+}
+
+/* Ensure that both columns have equal spacing between them */
+.main-about > * {
+  margin: 0 10px; /* Add margin between the columns */
 }
 
 .bio {
   color: #000000;
-  max-width: 100%;
-  padding: 20px;
-  height: auto;
+  max-width: 48%; /* Adjust the width of the Bio section */
   background-color: #ffffff;
   border: 2px solid #000000;
   border-radius: 10px;
@@ -310,6 +311,10 @@ td {
 
 .bio h1 {
   margin: 0px;
+}
+
+.skills {
+  max-width: 48%; /* Adjust the width of the Skills section */
 }
 
 .skill-flex {
@@ -565,6 +570,17 @@ td {
 
   h1 {
     font-size: 22px;
+  }
+}
+
+/* Media query to reset the margin and width for smaller screens (e.g., mobile) */
+@media (max-width: 768px) {
+  .main-about {
+    flex-direction: column; /* Stack columns on top of each other on smaller screens */
+  }
+  .main-about > * {
+    margin: 0; /* Remove margin between columns on smaller screens */
+    max-width: 100%; /* Allow each column to take up the full width on smaller screens */
   }
 }
 
