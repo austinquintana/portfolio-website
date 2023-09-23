@@ -621,8 +621,8 @@ td {
   }
 
   .nav-right {
-    flex-direction: column-reverse; /* Stack menu items vertically on mobile */
-    text-align: center; /* Center-align menu items on mobile */
+    align-self: flex-end; /* Align menu items to the right for mobile */
+    text-align: right; /* Right-align menu items text on mobile */
   }
 
   .page-header__item {
