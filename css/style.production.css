@@ -226,18 +226,24 @@ td {
 }
 
 .profile {
-  min-width: 360px;
-  max-width: 800px;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   padding-top: 50px;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
-.profile--centered {
-  max-width: 700px;
-  margin: 0 auto;
-  margin-bottom: 40px;
-  margin-top: 40px;
-  text-align: center;
+.profile-picture {
+  width: 300px; /* Adjust the size of the profile picture */
+  border-radius: 50%;
+  margin-right: 20px; /* Add spacing between picture and text */
+}
+
+.profile-text {
+  max-width: 600px; /* Adjust the maximum width of the text */
 }
 
 
@@ -635,6 +641,27 @@ td {
 
   .page-header__item {
     margin: 10px 0; /* Add spacing between header items on mobile */
+  }
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+  .profile {
+    flex-direction: column; /* Stack elements vertically on mobile */
+    text-align: center;
+  }
+
+  .profile-picture {
+    margin-right: 0; /* Remove margin on mobile */
+    margin-bottom: 20px; /* Add space below profile picture on mobile */
+  }
+
+  .profile-text {
+    max-width: 100%; /* Adjust text width for mobile */
+  }
+
+  .button {
+    max-width: 100%; /* Ensure button width is 100% on mobile */
   }
 }
 
