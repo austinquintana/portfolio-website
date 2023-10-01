@@ -507,9 +507,15 @@ td {
 }
 
 /* Bubbles */
+/* Apply the animations to the bubbles */
 .bubbles img {
   width: 50px;
-  animation: bubble 7s linear infinite;
+  animation-name: bubble;
+  animation-duration: 7s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  opacity: 0; /* Start with opacity 0 */
 }
 
 .bubbles {
@@ -519,14 +525,6 @@ td {
   justify-content: space-around;
   position: absolute;
   bottom: -120px;
-}
-
-/* Add a media query for mobile screens */
-@media (max-width: 768px) {
-  .bubbles img {
-    bottom: -50px; /* Adjust the starting position for mobile */
-    transform: translateY(100%); /* Start off-screen at the bottom */
-  }
 }
 
 @keyframes bubble {
@@ -546,6 +544,7 @@ td {
   }
 }
 
+/* Define animation delays for individual bubbles */
 .bubbles img:nth-child(1) {
   animation-delay: 2s;
 }
